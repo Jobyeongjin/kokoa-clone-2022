@@ -3,10 +3,12 @@
 
 /* Components */
 @import 'components/status-bar.css';
+@import 'components/nav-bar.css';
 
 /* Screens */
 @import 'screens/login.css';
 
 body {
     font-family: 'Open Sans', sans-serif;
+    height: 2000px;
 }
