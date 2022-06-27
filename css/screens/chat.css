@@ -1,6 +1,6 @@
 #chat-screen {
     background-color: #abc1d1;
-    height: 11000vh;
+    height: 500vh;
 }
 
 #chat-screen .status-bar,
@@ -12,11 +12,22 @@
     background-color: #abc1d1;
 }
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    } to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .main-chat {
-    margin-top: 130px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -134,3 +145,4 @@
 .reply__column button:active {
     outline: none;
 }
+
