@@ -31,3 +31,27 @@
     border-top: var(--main-border);
     padding-top: 15px;
 }
+
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    height: 100vh;
+    width: 100vW;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130px;
+    animation: hideSplashScreen 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
